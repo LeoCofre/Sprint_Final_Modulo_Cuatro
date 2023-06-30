@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/txtAboutMe"
+        android:layout_width="408dp"
+        android:layout_height="152dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgWhatsApp"
+        android:layout_width="119dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAboutMe"
+        app:srcCompat="@drawable/whatsapp_logo" />
+
+    <Button
+        android:id="@+id/btnWhatsApp"
+        android:layout_width="203dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="52dp"
+        android:text="Button"
+
+        app:layout_constraintBottom_toBottomOf="@+id/imgWhatsApp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgWhatsApp"
+        app:layout_constraintTop_toBottomOf="@+id/txtAboutMe" />
+
+    <ImageView
+        android:id="@+id/imgLinkedIn"
+        android:layout_width="98dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgWhatsApp"
+        app:srcCompat="@drawable/linkedin" />
+
+    <Button
+        android:id="@+id/btnLinkedIn"
+        android:layout_width="208dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="44dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLinkedIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgLinkedIn"
+        app:layout_constraintTop_toBottomOf="@+id/btnWhatsApp"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/edtxtMessage"
+        android:layout_width="253dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        android:textSize="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnContactMe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="@+id/btnLinkedIn"
+        app:layout_constraintTop_toBottomOf="@+id/btnLinkedIn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtNewMessage"
+        android:layout_width="91dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/textview"
+        app:layout_constraintEnd_toEndOf="@+id/imgLinkedIn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLinkedIn" />
+
+    <Button
+        android:id="@+id/btnContactMe"
+        android:layout_width="321dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="28dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

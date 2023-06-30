@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Sprint Final Modulo Cuatro</string>
+    <string name="textview">TextView</string>
 </resources>
