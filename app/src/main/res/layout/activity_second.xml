@@ -10,7 +10,10 @@
         android:id="@+id/txtAboutMe"
         android:layout_width="408dp"
         android:layout_height="152dp"
-        android:text="TextView"
+        android:backgroundTint="#42A5F5"
+        android:gravity="center"
+        android:text="Contactame "
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
@@ -22,19 +25,21 @@
         android:id="@+id/imgWhatsApp"
         android:layout_width="119dp"
         android:layout_height="76dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtAboutMe"
         app:srcCompat="@drawable/whatsapp_logo" />
 
     <Button
         android:id="@+id/btnWhatsApp"
-        android:layout_width="203dp"
-        android:layout_height="98dp"
+        android:layout_width="206dp"
+        android:layout_height="89dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="52dp"
-        android:text="Button"
+        android:backgroundTint="#42F545"
 
+        android:text="Llamar"
         app:layout_constraintBottom_toBottomOf="@+id/imgWhatsApp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -43,27 +48,28 @@
 
     <ImageView
         android:id="@+id/imgLinkedIn"
-        android:layout_width="98dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="113dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgWhatsApp"
         app:srcCompat="@drawable/linkedin" />
 
     <Button
         android:id="@+id/btnLinkedIn"
-        android:layout_width="208dp"
-        android:layout_height="84dp"
+        android:layout_width="206dp"
+        android:layout_height="89dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="44dp"
-        android:text="Button"
+        android:backgroundTint="#3788CA"
+        android:text="LinkedIn"
         app:layout_constraintBottom_toBottomOf="@+id/imgLinkedIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imgLinkedIn"
         app:layout_constraintTop_toBottomOf="@+id/btnWhatsApp"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.666" />
 
     <EditText
         android:id="@+id/edtxtMessage"
@@ -71,24 +77,28 @@
         android:layout_height="65dp"
         android:layout_marginTop="68dp"
         android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Ingrese mensaje"
         android:inputType="text"
-        android:text="Name"
-        android:textSize="48dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btnContactMe"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btnLinkedIn"
         app:layout_constraintTop_toBottomOf="@+id/btnLinkedIn"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txtNewMessage"
-        android:layout_width="91dp"
-        android:layout_height="51dp"
+        android:layout_width="123dp"
+        android:layout_height="54dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="52dp"
-        android:text="@string/textview"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="Mensaje nuevo "
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/imgLinkedIn"
+        app:layout_constraintHorizontal_bias="0.588"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgLinkedIn" />
 
@@ -97,7 +107,9 @@
         android:layout_width="321dp"
         android:layout_height="76dp"
         android:layout_marginBottom="28dp"
-        android:text="Button"
+        android:backgroundTint="#42A5F5"
+        android:text="Contactar"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
